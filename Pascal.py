@@ -1,4 +1,4 @@
-def Pascal(n):
+def Pascal(n):                                # Функция, которая выводит строку из треугольника Паскаля
     if n == 0:
         return [1]
     else:
@@ -9,10 +9,11 @@ def Pascal(n):
         row.append(1)
         return row
 
-def main():
+def main():                                       # Главная функция вызова
     n = int(input('Введите число, которое хотите превратить в треугольник Паскаля: '))
     for i in range(n):
         print(Pascal(i))
 
 if __name__ == "__main__":                              #Выполнение кода, если он запущен как самостоятельный файл
+
     main()
